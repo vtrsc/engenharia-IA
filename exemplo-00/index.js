@@ -1,6 +1,48 @@
 import * as tf from '@tensorflow/tfjs';
 
+async function trainModel( inputXs, outputYs) {
+    const model = tf.sequential();
 
+
+    //primeira camada da rede:
+    // entrada de 7 posições (idade normalizada + 3 cores + 3 localizaçoes)
+    // 80 neurônios = aqui coloquei tudo isso , pq tem pouca base de treino
+    //quanto mais neurônios, mais complexa a rede pode aprender
+ // e consequentemente, mais processamento ela vai usar 
+
+    // A ReLU age como um filtro:
+    // É como se ela deixasse somente os dados interessantes seguirem viagem na rede
+    /// Se a informação chegou nesse neuronio é positiva, passa para frente!
+    // se for zero ou negativa, pode jogar fora, nao vai servir para nada
+    model.add(tf.layers.dense({inputShape:[7], units: 80 , activation: 'relu'}))
+
+    //saida: 3 neurônios, um para cada categoria (premium, medium, basic)
+    // activation : softmax normaliza a saída para que a soma seja 1, ou seja, cada neurônio vai representar a probabilidade de cada categoria
+    model.add(tf.layers.dense({units: 3, activation: 'softmax'}))
+
+    // compilando o modelo 
+    // optimizer: 'adam' {Adaptive Moment Estimation}
+    // é um treinador pessoal moderno para redes neurais
+    // ajusta os pesos de forma eficiente e inteligente
+    // aprender com historico de erros e acertos
+    // loss : 'categoricalCrossentropy'
+    // ele compara o que o modelo "acha" (os scores de cada categoria)
+    // com o que é a resposta correta
+    // a categoria premium sera sempre [1, 0, 0]
+
+    //quanto mais distante da previsao do modelo da resposta correta
+    //maior o erro (loss)
+    // exemplo classico: classificaçao de imagens , recomendaçao ,categorização de usuario 
+    //qualquer coisa em que a resposta certa é "apenas uma entre varias possiveis"
+    model.compile({
+         optimizer: 'adam',
+          loss: 'categoricalCrossentropy',
+           metrics: ['accuracy']
+        })
+
+
+        
+}
 // Exemplo de pessoas para treino (cada pessoa com idade, cor e localização)
 // const pessoas = [
 //     { nome: "Erick", idade: 30, cor: "azul", localizacao: "São Paulo" },
@@ -37,5 +79,5 @@ const tensorLabels = [
 const inputXs = tf.tensor2d(tensorPessoasNormalizado)
 const outputYs = tf.tensor2d(tensorLabels)
 
-inputXs.print();
-outputYs.print();
+
+const models = trainModel(inputXs, outputYs)
