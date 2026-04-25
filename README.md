@@ -23,11 +23,6 @@ The intensive program covers key concepts in AI, from fundamentals to advanced t
 - Convolutional Neural Networks (CNN)  
 - Recurrent Neural Networks (RNN) and LSTM  
 
-### Tools and Technologies
-- Python  
-- TensorFlow and PyTorch  
-- Pandas and NumPy  
-
 ### Practical Applications
 - Real-world AI projects  
 - Model training and deployment  
