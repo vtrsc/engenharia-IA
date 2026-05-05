@@ -78,9 +78,8 @@ async function trainModel({ users }) {
 
     const context = makeContext(products, users)
     
-    debugger
+    debugger 
  
-    
     postMessage({ type: workerEvents.progressUpdate, progress: { progress: 100 } });
     postMessage({ type: workerEvents.trainingComplete });
 }
