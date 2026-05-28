@@ -34,7 +34,7 @@ export default async function main(game) {
             image: bitmap,
         }, [bitmap]);
 
-    }, 200); // every 200ms
+    }, 16); // every 200ms // Mudei para 16ms para tentar melhorar a taxa de atualização, mas pode ser ajustado conforme necessário
 
     return container;
 }
