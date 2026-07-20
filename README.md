@@ -107,6 +107,16 @@ To develop the skills necessary to design, build, and deploy intelligent systems
   - Session and state management
 - **Reference**: `prompt.md` contains specific automation tasks and requirements
 
+### **exemplo-08-context7**: Next.js Auth Demo with Better Auth
+- **Description**: A minimal full-stack demo built with Next.js App Router, Better Auth, GitHub OAuth, and local SQLite persistence
+- **Tech Stack**: Next.js, TypeScript, Tailwind CSS, Better Auth, better-sqlite3, npm
+- **Key Features**:
+  - GitHub login button with GitHub icon
+  - Home page showing login state
+  - Local SQLite storage for users and sessions
+  - Simple and polished UI with clear setup instructions
+- **Setup**: `npm install` → `npx @better-auth/cli migrate` → `npm run dev`
+
 ---
 
 ## 🚀 Quick Start
@@ -133,6 +143,7 @@ npm start
 3. Explore **exemplo-04** and **exemplo-05** for AI integration
 4. Learn game development with **exemplo-02**
 5. Master testing with **exemplo-06** and **exemplo-07**
+6. Review **exemplo-08** for a minimal auth demo with Next.js and Better Auth
 
 ## 🔄 Progress
 This repository is continuously updated with new learnings, experiments, and projects throughout the course.
