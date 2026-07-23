@@ -150,13 +150,13 @@ npm start
 
 ## 📖 Learning Path
 
-1. Start with **exemplo-00** for TensorFlow.js basics
-2. Progress to **exemplo-01** for practical ML implementation
-3. Explore **exemplo-04** and **exemplo-05** for AI integration
-4. Learn game development with **exemplo-02**
-5. Master testing with **exemplo-06** and **exemplo-07**
-6. Review **exemplo-08** for a minimal auth demo with Next.js and Better Auth
-7. Explores a complete observability ***exemplo-09****  Node.js, Fastify, OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Docker Compose
+ Start with **exemplo-00** for TensorFlow.js basics
+ Progress to **exemplo-01** for practical ML implementation
+ Explore **exemplo-04** and **exemplo-05** for AI integration
+ Learn game development with **exemplo-02**
+ Master testing with **exemplo-06** and **exemplo-07**
+ Review **exemplo-08** for a minimal auth demo with Next.js and Better Auth
+ Explores a complete observability ***exemplo-09****  Node.js, Fastify, OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Docker Compose
 
 ## 🔄 Progress
 This repository is continuously updated with new learnings, experiments, and projects throughout the course.
