@@ -117,6 +117,18 @@ To develop the skills necessary to design, build, and deploy intelligent systems
   - Simple and polished UI with clear setup instructions
 - **Setup**: `npm install` → `npx @better-auth/cli migrate` → `npm run dev`
 
+### **exemplo-09-grafana-mcp**: Observability with Grafana + MCP
+- **Description**: Explores a complete observability stack using Grafana and the Model Context Protocol (MCP), enabling developers to query metrics, logs, traces, and alerts directly from the IDE.
+- **Tech Stack**: Node.js, Fastify, OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Docker Compose, Blackbox Exporter
+- **Purpose**: Learn how to build, monitor, and troubleshoot applications using a modern observability platform integrated with MCP.
+- **Key Use Cases**:
+  - Collecting and visualizing application metrics
+  - Centralized log aggregation and analysis
+  - Distributed tracing with Tempo
+  - Querying observability data directly from the IDE via MCP
+  - Monitoring service health and availability with Blackbox Exporter
+- **Reference**: `prompt.md` contains setup instructions, MCP integration examples, and observability queries.
+
 ---
 
 ## 🚀 Quick Start
@@ -144,6 +156,7 @@ npm start
 4. Learn game development with **exemplo-02**
 5. Master testing with **exemplo-06** and **exemplo-07**
 6. Review **exemplo-08** for a minimal auth demo with Next.js and Better Auth
+7. Explores a complete observability ***exemplo-09****  Node.js, Fastify, OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Docker Compose
 
 ## 🔄 Progress
 This repository is continuously updated with new learnings, experiments, and projects throughout the course.
