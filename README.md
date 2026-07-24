@@ -145,6 +145,29 @@ To develop the skills necessary to design, build, and deploy intelligent systems
   - Streaming vs non-streaming responses
   - Understanding differences in safety policies between models
 - **Reference**: `request.sh` contains all example requests, including model download commands, OpenAI-compatible API requests, native Ollama API examples, and streaming demonstrations.
+
+### **exemplo-11-openrouter-api**: OpenRouter API Integration with LLM Models
+
+- **Description**: Demonstrates how to integrate external Large Language Models (LLMs) using the OpenRouter API. This example shows how to send chat completion requests using different AI models through an OpenAI-compatible interface.
+
+- **Tech Stack**: OpenRouter API, LLM Models, cURL, Bash, jq, Environment Variables (.env)
+
+- **Purpose**: Learn how to consume hosted AI models through APIs, manage authentication securely, and understand the structure of chat completion requests and responses.
+
+- **Key Concepts**:
+  - OpenAI-compatible Chat Completion API
+  - API authentication using environment variables
+  - Secure management of API keys with `.env`
+  - Model selection and configuration
+  - Prompt messages structure (`system`, `user`, `assistant`)
+  - Temperature parameter for controlling response creativity
+  - Token limitation with `max_tokens`
+  - JSON response processing with `jq`
+  - **Reference**:
+  `request.sh` contains the complete API request example, including authentication headers, model configuration, prompt structure, and response formatting.
+     
+     # Run API request
+      ./request.sh
 ---
 
 ## 🚀 Quick Start
@@ -173,6 +196,8 @@ npm start
  Master testing with **exemplo-06** and **exemplo-07**
  Review **exemplo-08** for a minimal auth demo with Next.js and Better Auth
  Explores a complete observability ***exemplo-09****  Node.js, Fastify, OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Docker Compose
+
+ Explore **exemplo-11** to learn how to integrate external LLM providers using OpenRouter API and secure API authentication.
 
 ## 🔄 Progress
 This repository is continuously updated with new learnings, experiments, and projects throughout the course.
