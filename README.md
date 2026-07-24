@@ -129,6 +129,22 @@ To develop the skills necessary to design, build, and deploy intelligent systems
   - Monitoring service health and availability with Blackbox Exporter
 - **Reference**: `prompt.md` contains setup instructions, MCP integration examples, and observability queries.
 
+
+### **exemplo-10-ollama-api-comparison**: Ollama API Comparison (OpenAI Compatible vs Native API)
+
+- **Description**: Demonstrates how to interact with local LLMs running on Ollama using both the OpenAI-compatible API (`/v1/chat/completions`) and the native Ollama API (`/api/generate`). The example compares model behavior, output formats, and reasoning capabilities.
+- **Tech Stack**: Ollama, Local LLMs, cURL, Bash, jq
+- **Purpose**: Learn how different Ollama endpoints behave, understand response formats, and compare safety behavior between different language models.
+- **Key Use Cases**:
+  - Listing locally installed models with `ollama list`
+  - Downloading models using `ollama pull`
+  - Calling the OpenAI-compatible endpoint (`/v1/chat/completions`)
+  - Calling the native Ollama endpoint (`/api/generate`)
+  - Comparing structured JSON responses
+  - Inspecting reasoning (`thinking`) returned by compatible models
+  - Streaming vs non-streaming responses
+  - Understanding differences in safety policies between models
+- **Reference**: `request.sh` contains all example requests, including model download commands, OpenAI-compatible API requests, native Ollama API examples, and streaming demonstrations.
 ---
 
 ## 🚀 Quick Start
