@@ -31,7 +31,25 @@ The intensive program covers key concepts in AI, from fundamentals to advanced t
 ## 🎯 Objective
 To develop the skills necessary to design, build, and deploy intelligent systems, preparing for real-world AI engineering challenges.
 
-## 📂 Projects Structure
+## 📂 Modulo-01
+
+| Example | Topic | Main Technologies |
+|---------|-------|-------------------|
+| **exemplo-00** | TensorFlow.js Basics | TensorFlow.js, Node.js |
+| **exemplo-01** | E-commerce Recommendation System | TensorFlow.js, JavaScript |
+| **exemplo-02** | Duck Hunt Game | PixiJS, Webpack |
+| **exemplo-04** | Temperature & TopK | JavaScript, AI APIs |
+| **exemplo-05** | Multimodal AI | JavaScript, AI Services |
+| **exemplo-06** | Playwright Tests | Playwright |
+| **exemplo-07** | Playwright Navigation | Playwright |
+| **exemplo-08** | Better Auth Demo | Next.js, Better Auth |
+| **exemplo-09** | Grafana + MCP | Grafana, OpenTelemetry |
+| **exemplo-10** | Ollama API Comparison | Ollama |
+| **exemplo-11** | OpenRouter API | OpenRouter |
+| **exemplo-12** | Neo4j Embeddings | LangChain, Neo4j |
+| **exemplo-13** | RAG with Neo4j | LangChain, Neo4j, LLM |
+
+
 
 ### **exemplo-00**: TensorFlow.js Basics
 - **Description**: Introduction to TensorFlow.js with basic machine learning models
@@ -170,35 +188,50 @@ To develop the skills necessary to design, build, and deploy intelligent systems
       ./request.sh
 ---
 
-## 🚀 Quick Start
+### **exemplo-12-embeddings-neo4j-template**: Embeddings with Neo4j Vector Store
 
-```bash
-# Clone the repository
-git clone https://github.com/vtrsc/engenharia-IA.git
-cd engenharia-IA
+- **Description**: Demonstrates how to generate vector embeddings from PDF documents and store them in Neo4j as a vector database. This project introduces the complete indexing pipeline required for semantic search applications.
+- **Tech Stack**: Node.js, TypeScript, LangChain, Hugging Face Transformers, Neo4j, Docker Compose
+- **Purpose**: Learn how to transform documents into embeddings and persist them inside a vector database for semantic retrieval.
+- **Key Concepts**:
+  - PDF document ingestion
+  - Text chunking
+  - Embedding generation using Hugging Face models
+  - Neo4j Vector Store integration
+  - Similarity search
+  - Local vector database with Docker
+- **Reference**:
+  - `src/index.ts` – application entry point
+  - `src/documentProcessor.ts` – document processing pipeline
+  - `src/config.ts` – Neo4j configuration
+  - `docker-compose.yml` – Neo4j local environment
+  - `tensores.pdf` – sample document used for indexing
 
-# Navigate to desired example
-cd exemplo-01-ecommerce-recomendations
+---
 
-# Install dependencies
-npm install
+### **exemplo-13-embeddings-neo4j-rag**: Retrieval-Augmented Generation (RAG)
 
-# Start the project
-npm start
-```
+- **Description**: Demonstrates how to build a complete Retrieval-Augmented Generation (RAG) pipeline using Neo4j Vector Search and Large Language Models. The application retrieves the most relevant document chunks before generating grounded responses.
+- **Tech Stack**: Node.js, TypeScript, LangChain, Hugging Face Transformers, Neo4j, Docker Compose, LLM APIs
+- **Purpose**: Learn how modern AI assistants combine semantic search and LLMs to answer questions based on private documents instead of relying only on the model's internal knowledge.
+- **Key Concepts**:
+  - Retrieval-Augmented Generation (RAG)
+  - Semantic Search
+  - Vector Similarity Search
+  - Context Injection
+  - Prompt Engineering
+  - AI-powered Question Answering
+- **Reference**:
+  - `src/index.ts` – RAG execution flow
+  - `src/documentProcessor.ts` – document indexing
+  - `src/config.ts` – embeddings and Neo4j configuration
+  - `src/ai.ts` – LLM integration
+  - `respostas/` – generated answers
+  - `tensores.pdf` – knowledge source
 
-## 📖 Learning Path
 
- Start with **exemplo-00** for TensorFlow.js basics
- Progress to **exemplo-01** for practical ML implementation
- Explore **exemplo-04** and **exemplo-05** for AI integration
- Learn game development with **exemplo-02**
- Master testing with **exemplo-06** and **exemplo-07**
- Review **exemplo-08** for a minimal auth demo with Next.js and Better Auth
- Explores a complete observability ***exemplo-09****  Node.js, Fastify, OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Docker Compose
 
- Explore **exemplo-11** to learn how to integrate external LLM providers using OpenRouter API and secure API authentication.
-
+ 
 ## 🔄 Progress
 This repository is continuously updated with new learnings, experiments, and projects throughout the course.
 
