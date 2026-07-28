@@ -31,7 +31,7 @@ The intensive program covers key concepts in AI, from fundamentals to advanced t
 ## 🎯 Objective
 To develop the skills necessary to design, build, and deploy intelligent systems, preparing for real-world AI engineering challenges.
 
-## 📂 Modulo-01
+## 📂 Modulo 1 Fundamentos de LLm´s 
 
 | Example | Topic | Main Technologies |
 |---------|-------|-------------------|
