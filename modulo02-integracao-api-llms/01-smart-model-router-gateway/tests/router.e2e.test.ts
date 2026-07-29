@@ -32,7 +32,7 @@ test('routes to cheapest model by default', async () => {
     assert.equal(response.statusCode, 200)
     const body = response.json() as LLMResponse
 
-    assert.equal(body.model, 'arcee-ai/trinity-large-preview:free')
+    assert.equal(body.model, 'nvidia/nemotron-3-nano-30b-a3b:free')
 })
 
 test('routes to highest throughput model by default', async () => {
