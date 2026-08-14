@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --env-file .env --inspect --watch src/index.ts",
+    "test:dev": "node --env-file .env --inspect --watch --test ./tests/**/*.test.ts",
+    "test": "node --env-file .env --test  ./tests/**/*.test.ts",
+    "langgraph:serve": "npx @langchain/langgraph-cli@latest dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
+    "fastify": "^5.11.3",
     "langchain": "^1.2.17"
   },
   "devDependencies": {
