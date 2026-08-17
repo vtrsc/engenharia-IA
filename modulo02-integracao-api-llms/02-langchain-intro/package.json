@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node --env-file .env --inspect --watch src/index.ts",
     "test:dev": "node --env-file .env --inspect --watch --test ./tests/**/*.test.ts",
-    "test": "node --env-file .env --test  ./tests/**/*.test.ts",
+    "test": "node --env-file .env --test ./tests/**/*.test.ts",
     "langgraph:serve": "npx @langchain/langgraph-cli@latest dev"
   },
   "keywords": [],
@@ -14,10 +14,9 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "fastify": "^5.11.3",
-    "langchain": "^1.2.17"
-  },
-  "devDependencies": {
-    "@langchain/langgraph-cli": "^1.4.3"
+    "@langchain/core": "1.2.8",
+    "@types/node": "^24.10.13",
+    "fastify": "^5.7.4",
+    "langchain": "1.5.9"
   }
 }
