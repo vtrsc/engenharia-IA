@@ -27,7 +27,7 @@ export class OpenRouterService {
                     "X-Title": this.config.xTitle,
                 },
             },
-
+                // aqui vai a conf do open router (smart model)
             modelKwargs: {
                 models: this.config.models,
                 provider: this.config.provider,
