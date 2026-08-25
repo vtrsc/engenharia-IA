@@ -37,7 +37,7 @@ export function createSchedulerNode(appointmentService: AppointmentService) {
       //   new Date(validation.data.datetime),
       //   validation.data.patientName,
       //   state.reason ?? 'general consultation'
-      // )
+      // ) 
 
       console.log(`✅ Appointment scheduled successfully`);
 

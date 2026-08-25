@@ -19,11 +19,11 @@ export function createMessageGeneratorNode(llmClient: OpenRouterService) {
 
             const systemPrompt = getSystemPrompt()
             const userPrompt = getUserPromptTemplate({ scenario, details })
-
+           
             const result = await llmClient.generateStructured(
                 systemPrompt,
                 userPrompt,
-                MessageSchema,
+                MessageSchema, 
             )
             console.log(`✅ Message generated:`, result.data?.message ?? result.data ?? result);
 
