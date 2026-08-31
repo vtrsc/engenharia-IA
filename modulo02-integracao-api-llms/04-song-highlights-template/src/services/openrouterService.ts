@@ -20,6 +20,7 @@ export class OpenRouterService {
       apiKey: this.config.apiKey,
       modelName: this.config.models[0],
       temperature: this.config.temperature,
+      maxTokens: this.config.maxTokens,
       configuration: {
         baseURL: 'https://openrouter.ai/api/v1',
         defaultHeaders: {
@@ -53,6 +54,7 @@ export class OpenRouterService {
       ];
 
       const data = await agent.invoke({ messages });
+      
 
       return {
         success: true,

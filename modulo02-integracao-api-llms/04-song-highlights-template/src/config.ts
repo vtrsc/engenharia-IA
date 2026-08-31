@@ -12,6 +12,7 @@ export type ModelConfig = {
 
   models: string[];
   temperature: number;
+  maxTokens: number;
 
   memory: {
     dbUri: string;
@@ -38,6 +39,7 @@ export const config: ModelConfig = {
     },
   },
   temperature: 0.7,
+  maxTokens: 2048,
   memory: {
     dbUri: 'postgresql://postgres:mysecretpassword@localhost:5432/song_recommender',
   }
