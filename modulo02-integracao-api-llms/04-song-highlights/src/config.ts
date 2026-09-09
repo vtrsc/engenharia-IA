@@ -43,4 +43,5 @@ export const config: ModelConfig = {
   memory: {
     dbUri: 'postgresql://postgres:mysecretpassword@localhost:5432/song_recommender',
   }
+  
 };
