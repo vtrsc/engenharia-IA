@@ -1,5 +1,5 @@
 # 🤖 AI Engineering - Intensive Course
-
+  
 ## About
 This repository documents my progress, notes, and projects developed during an intensive course in Artificial Intelligence Engineering. The focus is on building a strong foundation and applying practical knowledge to real-world scenarios.
 
