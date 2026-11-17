@@ -44,7 +44,7 @@ export const config: ModelConfig = {
   xTitle: 'IA Devs - Guardrails'!,
   models: [
     // 'upstage/solar-pro-3:free',
-    'qwen/qwen-2.5-7b-instruct',// unsafe!
+   'qwen/qwen3.7-plus',// unsafe!
   ],
 
   guardrailsModel: 'openai/gpt-oss-safeguard-20b',
